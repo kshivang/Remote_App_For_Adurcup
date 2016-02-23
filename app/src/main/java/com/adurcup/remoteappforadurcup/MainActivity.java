@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
                 outputStream.write(jGcmData.toString().getBytes());
 
                 // Read GCM response.
-                InputStream inputStream = conn.getInputStream();
-                resp = IOUtils.toString(inputStream);
+//                InputStream inputStream = conn.getInputStream();
+ //               resp = IOUtils.toString(inputStream);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -125,11 +125,8 @@ public class MainActivity extends AppCompatActivity {
         }
         @Override
         protected void onPostExecute(Integer result) {
-            if (resp!=null) {
-                Toast.makeText(getApplicationContext(), "Response Sent", Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(getApplicationContext(), "Response Sent", Toast.LENGTH_SHORT).show();
         }
-        String resp;
 
     }
 }
