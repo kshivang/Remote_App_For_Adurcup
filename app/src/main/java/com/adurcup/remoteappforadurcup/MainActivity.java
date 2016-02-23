@@ -40,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 new GcmSender().execute("soup");
             }
         });
+        Left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new GcmSender().execute("soup");
+            }
+        });
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new GcmSender().execute("pizza");
+            }
+        });
+        Right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new GcmSender().execute("pizza");
