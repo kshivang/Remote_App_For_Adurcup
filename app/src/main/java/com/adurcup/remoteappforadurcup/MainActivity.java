@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     public class GcmSender extends AsyncTask<String, Void, Integer> {
 
         public static final String API_KEY = "AIzaSyCy5V5pHG30ZvHASDL5rNmF0fPe9H-XBTk";
-        public final String[] REGISTRATION_ID = {"dbAGNSAthSs:APA91bGi2olgTvBfsZ0dMbGrtxbeg1nBoJboOPp9-7ZkBQ2fyMAFZSXSrjDgWlpFXEO46hB0Jq5l1Q3cqswCBk4-9rcInv3Z-V-5nNSJAqeDbdM9BQxwyvvdF4vlKih2xKUc5Jf_-b7k"};
+        public final String REGISTRATION_ID = "dzF4qA6mRPE:APA91bFqpz3_RO-rfwVrFZe2geZPPtKFjiX93AUN1aKUUjsfmbQ7LLfMk_hZYgshGKP2fVRbiy2w-G_dKckjW6KqbjT5eMT2MY8dDVr4uQmZVlCLp_CO-BLr8xqluauJ0qYpetYu9R37";
         @Override
         protected void onPreExecute() {
         }
@@ -97,13 +97,13 @@ public class MainActivity extends AppCompatActivity {
                     jData.put("title","Test notification");
                     jData.put("message", params[0]);
                     // Where to send GCM message.
-                    jGcmData.put("to", "/topics/global");
+                    jGcmData.put("to", REGISTRATION_ID);
                     // What to send in GCM message.
                     jGcmData.put("data", jData);
                     jGcmData.put("collapse_key", "awesome_update");
+                    jGcmData.put("restricted_package_name","gcm.play.android.samples.com.gcmquickstart");
                     jGcmData.put("priority", "high");
                     jGcmData.put("delay_while_idle", false);
-                    //jGcmData.put("registration_ids", REGISTRATION_ID);
                 } catch (JSONException e){
                     e.printStackTrace();
                 }
