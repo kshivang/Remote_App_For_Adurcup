@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
         Up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new GcmSender().execute("soup");
+                new GcmSender().execute("up");
             }
         });
         Left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new GcmSender().execute("soup");
+                new GcmSender().execute("left");
             }
         });
         Home.setOnClickListener(new View.OnClickListener() {
@@ -61,23 +61,29 @@ public class MainActivity extends AppCompatActivity {
         Down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new GcmSender().execute("pizza");
+                new GcmSender().execute("down");
             }
         });
         Right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new GcmSender().execute("pizza");
+                new GcmSender().execute("right");
+            }
+        });
+        Select.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new GcmSender().execute("select");
             }
         });
     }
+
     public class GcmSender extends AsyncTask<String, Void, Integer> {
 
         public static final String API_KEY = "AIzaSyCy5V5pHG30ZvHASDL5rNmF0fPe9H-XBTk";
         public final String[] REGISTRATION_ID = {"dbAGNSAthSs:APA91bGi2olgTvBfsZ0dMbGrtxbeg1nBoJboOPp9-7ZkBQ2fyMAFZSXSrjDgWlpFXEO46hB0Jq5l1Q3cqswCBk4-9rcInv3Z-V-5nNSJAqeDbdM9BQxwyvvdF4vlKih2xKUc5Jf_-b7k"};
         @Override
         protected void onPreExecute() {
-            setProgressBarIndeterminateVisibility(true);
         }
 
         @Override
