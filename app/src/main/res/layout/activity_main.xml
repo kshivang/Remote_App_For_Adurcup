@@ -16,6 +16,7 @@
         android:id="@+id/up"
         android:src="@drawable/ic_expand_less_black_18dp"
         android:layout_above="@+id/select"
+        android:backgroundTint="#757575"
         />
     <ImageButton
         android:layout_width="wrap_content"
@@ -23,6 +24,7 @@
         android:layout_marginTop="32dp"
         android:layout_toLeftOf="@+id/select"
         android:layout_marginRight="32dp"
+        android:backgroundTint="#757575"
         android:id="@+id/left"
         android:layout_below="@+id/up"
         android:src="@drawable/ic_chevron_left_black_18dp"
@@ -31,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/right"
+        android:backgroundTint="#757575"
         android:layout_marginTop="32dp"
         android:layout_marginLeft="32dp"
         android:layout_below="@+id/up"
@@ -41,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#757575"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/left"
         android:id="@+id/down"
@@ -49,6 +53,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#757575"
         android:layout_marginTop="32dp"
         android:layout_centerInParent="true"
         android:id="@+id/select"
@@ -60,6 +65,7 @@
         android:layout_marginTop="64dp"
         android:layout_height="wrap_content"
         android:text="HOME"
+        android:backgroundTint="#757575"
         android:src="@drawable/ic_home_black_18dp"
         android:layout_alignParentBottom="true"
         android:id="@+id/home"
@@ -67,6 +73,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#757575"
         android:id="@+id/back"
         android:text="BACK"
         android:src="@drawable/ic_keyboard_backspace_black_18dp"

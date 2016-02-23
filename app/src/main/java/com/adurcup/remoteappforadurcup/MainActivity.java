@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new GcmSender().execute("home");
+                new GcmSender().execute("blank");
             }
         });
         Down.setOnClickListener(new View.OnClickListener() {
