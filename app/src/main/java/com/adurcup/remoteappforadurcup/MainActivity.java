@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import org.apache.commons.io.IOUtils;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -20,19 +20,19 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Up, Right, Left, Down, Select, Home, Back;
+    ImageButton Up, Right, Left, Down, Select, Home, Back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Up = (Button) findViewById(R.id.up);
-        Right = (Button) findViewById(R.id.right);
-        Left = (Button) findViewById(R.id.left);
-        Down = (Button) findViewById(R.id.down);
-        Select = (Button) findViewById(R.id.select);
-        Home = (Button) findViewById(R.id.home);
-        Back = (Button) findViewById(R.id.back);
+        Up = (ImageButton) findViewById(R.id.up);
+        Right = (ImageButton) findViewById(R.id.right);
+        Left = (ImageButton) findViewById(R.id.left);
+        Down = (ImageButton) findViewById(R.id.down);
+        Select = (ImageButton) findViewById(R.id.select);
+        Home = (ImageButton) findViewById(R.id.home);
+        Back = (ImageButton) findViewById(R.id.back);
 
         Up.setOnClickListener(new View.OnClickListener() {
             @Override

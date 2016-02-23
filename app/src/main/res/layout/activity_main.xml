@@ -9,61 +9,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.adurcup.remoteappforadurcup.MainActivity">
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/up"
-        android:text="up"
+        android:src="@drawable/ic_expand_less_black_18dp"
+        android:layout_above="@+id/select"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/select"
+        android:layout_marginRight="32dp"
         android:id="@+id/left"
         android:layout_below="@+id/up"
-        android:text="LEFT"
+        android:src="@drawable/ic_chevron_left_black_18dp"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/right"
-        android:layout_alignBaseline="@+id/left"
-        android:layout_alignParentRight="true"
-        android:text="right"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/up"
+        android:src="@drawable/ic_chevron_right_black_18dp"
+        android:layout_toRightOf="@+id/select"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/left"
         android:id="@+id/down"
-        android:text="down"
+        android:src="@drawable/ic_expand_more_black_18dp"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_below="@+id/down"
+        android:layout_marginTop="32dp"
+        android:layout_centerInParent="true"
         android:id="@+id/select"
-        android:text="select"
+        android:src="@drawable/ic_fullscreen_black_18dp"
         android:layout_centerHorizontal="true"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_marginTop="64dp"
         android:layout_height="wrap_content"
         android:text="HOME"
-        android:layout_below="@+id/select"
+        android:src="@drawable/ic_home_black_18dp"
+        android:layout_alignParentBottom="true"
         android:id="@+id/home"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/back"
         android:text="BACK"
-        android:layout_alignBaseline="@+id/home"
+        android:src="@drawable/ic_keyboard_backspace_black_18dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         />
 </RelativeLayout>
