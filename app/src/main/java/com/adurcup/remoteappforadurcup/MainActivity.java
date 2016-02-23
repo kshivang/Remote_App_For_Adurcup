@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public class GcmSender extends AsyncTask<String, Void, Integer> {
 
         public static final String API_KEY = "AIzaSyCy5V5pHG30ZvHASDL5rNmF0fPe9H-XBTk";
+        public final String[] REGESTRATION_ID = {"dbAGNSAthSs:APA91bGi2olgTvBfsZ0dMbGrtxbeg1nBoJboOPp9-7ZkBQ2fyMAFZSXSrjDgWlpFXEO46hB0Jq5l1Q3cqswCBk4-9rcInv3Z-V-5nNSJAqeDbdM9BQxwyvvdF4vlKih2xKUc5Jf_-b7k"};
         @Override
         protected void onPreExecute() {
             setProgressBarIndeterminateVisibility(true);
@@ -96,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     jGcmData.put("collapse_key", "awesome_update");
                     jGcmData.put("priority", "high");
                     jGcmData.put("delay_while_idle", false);
+                    jGcmData.put("registration_ids", REGESTRATION_ID);
                 } catch (JSONException e){
                     e.printStackTrace();
                 }
